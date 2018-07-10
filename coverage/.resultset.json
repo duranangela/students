@@ -21,8 +21,22 @@
         1,
         1,
         null
+      ],
+      "/Users/angeladuran/turing/2module/classwork/students/app/controllers/students_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/angeladuran/turing/2module/classwork/students/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1531251851
+    "timestamp": 1531252192
   }
 }
