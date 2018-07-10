@@ -1,0 +1,19 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/angeladuran/turing/2module/classwork/students/app/models/student.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/angeladuran/turing/2module/classwork/students/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1531251551
+  }
+}
