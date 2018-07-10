@@ -48,6 +48,17 @@
         1,
         1,
         null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/angeladuran/turing/2module/classwork/students/spec/features/user_sees_nav_bar_spec.rb": [
@@ -95,7 +106,7 @@
         1,
         null,
         1,
-        4,
+        5,
         null,
         null,
         1,
@@ -149,6 +160,6 @@
         null
       ]
     },
-    "timestamp": 1531254968
+    "timestamp": 1531255140
   }
 }
