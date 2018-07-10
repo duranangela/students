@@ -1,6 +1,22 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/angeladuran/turing/2module/classwork/students/spec/features/user_can_delete_a_student_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/angeladuran/turing/2module/classwork/students/spec/features/user_can_edit_student_name_spec.rb": [
         1,
         null,
@@ -59,7 +75,7 @@
         1,
         null,
         1,
-        1,
+        3,
         null,
         null,
         1,
@@ -91,6 +107,12 @@
         null,
         0,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         1,
@@ -107,6 +129,6 @@
         null
       ]
     },
-    "timestamp": 1531253829
+    "timestamp": 1531254302
   }
 }
