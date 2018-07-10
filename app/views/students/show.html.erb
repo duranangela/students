@@ -7,3 +7,7 @@
   <p><%= address.state %></p>
   <p><%= address.zip_code %></p>
 <% end %>
+
+<%= @courses.each do |course| %>
+  <p><%= course.name %></p>
+<% end %>
