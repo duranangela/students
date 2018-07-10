@@ -37,4 +37,15 @@ describe 'user visits student show page' do
     expect(page).to have_content(add2.state)
     expect(page).to have_content(add2.zip_code)
   end
+
+  it 'displays courses for one student' do
+    student1 = Student.create(name: 'Bobby Jones')
+    course1 = student1.courses.create(name: 'Maths')
+    course2 = student1.courses.create(name: 'Gyms')
+
+    visit student_path(student1)
+
+    expect(page).to have_content(course1.name)
+    expect(page).to have_content(course2.name)
+  end
 end
