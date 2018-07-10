@@ -6,5 +6,7 @@ describe Student, type: :model do
   end
   describe 'relationships' do
     it {should have_many(:addresses)}
+    it {should have_many(:student_courses)}
+    it {should have_many(:courses).through(:student_courses)}
   end
 end
