@@ -8,7 +8,7 @@ describe 'user visits edit student page' do
 
     fill_in 'student[name]', with: 'MaryAnne Brown'
 
-    click_on 'Edit Student'
+    click_on 'Update Student'
 
     expect(current_path).to eq(student_path(student))
     expect(page).to have_content('MaryAnne Brown')
