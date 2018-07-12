@@ -3,22 +3,27 @@ require 'rails_helper'
 describe 'user visits new address page' do
   it 'user can create a new address' do
     student = Student.create(name: 'Mary Brown')
+    description = 'Summer'
+    street_address = '123 Main St.'
+    city = 'Denver'
+    state = 'CO'
+    zip_code = 80002
 
     visit new_student_address_path(student)
 
-    fill_in 'address[description]', with: 'Summer'
-    fill_in 'address[street_address]', with: '123 Main St.'
-    fill_in 'address[city]', with: 'Denver'
-    fill_in 'address[state]', with: 'CO'
-    fill_in 'address[zip_code]', with: 80002
+    fill_in :address_description, with: description
+    fill_in :address_street_address, with: street_address
+    fill_in :address_city, with: city
+    fill_in :address_state, with: state
+    fill_in :address_zip_code, with: zip_code
 
     click_on 'Create Address'
 
     expect(current_path).to eq(student_path(student))
-    expect(page).to have_content('Summer')
-    expect(page).to have_content('123 Main St.')
-    expect(page).to have_content('Denver')
-    expect(page).to have_content('CO')
-    expect(page).to have_content(80002)
+    expect(page).to have_content(description)
+    expect(page).to have_content(street_address)
+    expect(page).to have_content(city)
+    expect(page).to have_content(state)
+    expect(page).to have_content(zip_code)
   end
 end

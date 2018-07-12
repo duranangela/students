@@ -6,8 +6,8 @@ class StudentsController < ApplicationController
 
   def show
     @student = Student.find(params[:id])
-    @addresses = @student.addresses.all
-    @courses = @student.courses.all
+    @addresses = @student.addresses
+    @courses = @student.courses
   end
 
   def new
@@ -38,8 +38,7 @@ class StudentsController < ApplicationController
   end
 
   def destroy
-    student = Student.find(params[:id])
-    student.destroy
+    Student.destroy(params[:id])
     redirect_to students_path
   end
 
